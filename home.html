@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Rio Rizki Aryanto</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" type="image/png" href="dist/assets/me_circle.png" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+        <script src="https://unpkg.com/scrolltrigger@3.9.0/dist/ScrollTrigger.min.js"></script>
+    </head>
+    <script>
+        // Wait for the DOM to be ready
+        document.addEventListener("DOMContentLoaded", function () {
+          // Create a GSAP timeline
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".box", // The element to trigger the animation
+              start: "top 80%", // Start the animation when the trigger is 80% in view
+              end: "top 20%", // End the animation when the trigger is 20% in view
+              scrub: 1, // Smoothly animate the properties based on the scroll position
+            },
+          });
+      
+          // Define the animation
+          tl.to(".container", { opacity: 1, duration: 1 });
+        });
+      </script>
+    <body>
+        <div class="header-section">
+            <h1>This are header section</h1>
+        </div>
+        <div class="container">
+            <h1>Rio Rizki Aryanto</h1>
+            <h2>Hallo</h2>
+            <div class="text-uppercase">Data Scientist &middot; Data Analyst &middot; Data Consultant</div>
+        </div>
+    </body>
+    
+</html>
