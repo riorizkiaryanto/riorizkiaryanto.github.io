@@ -249,6 +249,177 @@ nav a {
   text-align: left;
 }
 
+.about-section {
+  height: 100vh;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  margin-left: 22%;
+}
+
+.about-section img {
+  margin-right: 20px;
+}
+
+.about-section h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 36px;
+  font-weight: 900;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: black;
+  margin: 10px 0;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.about-section p {
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+#experiences {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  margin-left: 22%;
+}
+
+#experiences h3 {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  line-height: 0;
+}
+
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.experience-content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 800px;
+  line-height: 20px;
+}
+
+.experience-content h2 {
+  /* display: flex; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: 600;
+  /* margin: 5px; */
+  line-height: 0px;
+  color: #363636;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.experience-content h3 {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  /* margin: 0 auto; */
+  line-height: 0px;
+  color: #363636;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.company-link {
+  text-decoration: none;
+  color: 363636;
+}
+
+.company-link:hover {
+  color: grey
+}
+
+.bullet-list {
+  list-style-type: disc;
+  font-size: 14px;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin-top: 2px;
+}
+
+#educations {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  margin-left: 22%;
+}
+
+#educations h3 {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  line-height: 2px;
+}
+
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.education-content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 800px;
+  line-height: 0px;
+}
+
+.education-content h2 {
+  /* display: flex; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0px;
+  color: #363636;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.education-content h3 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 0px;
+  color: #363636;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 /* @media screen and (min-width: 768px) {
   .hero-section img {
       float: left;
@@ -314,6 +485,21 @@ nav a {
   .contacts {
     flex-direction: row;
     align-items: center; /* Mengatur agar ikon kontak berada di tengah pada perangkat seluler */
+  }
+
+  .about-section {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-section img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  #experiences h3 {
+    margin-left: 0;
+    text-align: center;
   }
 }
 
