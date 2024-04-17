@@ -281,7 +281,7 @@ nav a {
 }
 
 .about-section p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   max-width: 800px;
   line-height: 1.5;
@@ -290,17 +290,14 @@ nav a {
 #experiences {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: left;
-  align-items: left;
-  margin-left: 22%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30%;
 }
 
 #experiences h3 {
   display: flex;
-  justify-content: left;
-  align-items: left;
-  line-height: 0;
+  line-height: 5px;
 }
 
 .experience {
@@ -309,8 +306,7 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  margin: 0 auto;
+  padding: 5px;
   max-width: 800px;
 }
 
@@ -326,22 +322,24 @@ nav a {
 }
 
 .experience-content h2 {
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   font-size: 18px;
   font-weight: 600;
-  /* margin: 5px; */
-  line-height: 0px;
   color: #363636;
   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.experience-content h2 a {
+  align-self: left;
+  margin-left: 5px;
 }
 
 .experience-content h3 {
   font-size: 14px;
   font-weight: 300;
   font-style: italic;
-  /* margin: 0 auto; */
   line-height: 0px;
   color: #363636;
   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -349,11 +347,11 @@ nav a {
 
 .company-link {
   text-decoration: none;
-  color: 363636;
+  color: orangered;
 }
 
 .company-link:hover {
-  color: grey
+  color: #363636;
 }
 
 .bullet-list {
@@ -366,17 +364,14 @@ nav a {
 #educations {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: left;
-  align-items: left;
-  margin-left: 22%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30%;
 }
 
 #educations h3 {
   display: flex;
-  justify-content: left;
-  align-items: left;
-  line-height: 2px;
+  line-height: 5px;
 }
 
 .education {
@@ -385,8 +380,7 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  margin: 0 auto;
+  padding: 5px;
   max-width: 800px;
 }
 
@@ -398,11 +392,11 @@ nav a {
   justify-content: center;
   align-items: flex-start;
   max-width: 800px;
-  line-height: 0px;
+  line-height: 20px;
 }
 
 .education-content h2 {
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   font-size: 18px;
@@ -413,12 +407,124 @@ nav a {
 }
 
 .education-content h3 {
+  display: flex;
   font-size: 14px;
   font-weight: 300;
   line-height: 0px;
   color: #363636;
   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
+
+#testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.testimoni-container {
+  display: flex;
+  overflow-x: hidden; 
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+.recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recommendations h3 {
+  display: flex;
+  line-height: 5px;
+}
+
+.testimoni {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+.testimoni-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1000px;
+  line-height: 20px;
+}
+
+.testimoni-content img {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.testimoni-content h2 {
+  font-size: 18px;
+}
+
+.testimoni-content h3 {
+  text-align: left;
+  font-size: 14px;
+  flex: 1;
+}
+
+.testimoni-content-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  max-width: 100%;
+  color: #363636;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.testimoni-content-text h2 {
+  font-size: 18px;
+}
+
+.testimoni-content-text h3 {
+  text-align: left;
+  font-size: 14px;
+  flex: 1;
+}
+
+.testimoni-content-text p {
+  text-align: left;
+  font-size: 14px;
+}
+
+.navigation {
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.prev {
+  position: absolute;
+  left: 10px;
+}
+
+.next {
+  position: absolute;
+  right: 10px;
+}
+
 
 /* @media screen and (min-width: 768px) {
   .hero-section img {
@@ -501,6 +607,7 @@ nav a {
     margin-left: 0;
     text-align: center;
   }
+
 }
 
 /* Styles for screens larger than 768px */
