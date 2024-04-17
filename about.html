@@ -13,8 +13,6 @@
     <link rel="manifest" href="src/assets/favicon/site.webmanifest">
 </head>
 <body>
-  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;"><img class="btt" src=""></button> -->
-  <!-- Navigation Bar -->
   <div>
     <nav>
       <a href="./index.html">Home</a>
@@ -81,13 +79,13 @@
       </div>
   </div>
 
-  <div class="educations" data-aos="fade-up">
+  <div id="educations" data-aos="fade-up">
     <h3>Education</h3>
     <div class="education">
       <div class="education-content">
-        <h2>Universitas Islam Indonesia</a></h2>
+        <h2>Universitas Islam Indonesia</h2>
         <h3>Master of Informatic · GPA 3.97 · Feb 2020 - Feb 2022</h3>
-        <h2>Universitas Gadjah Mada</a></h2>
+        <h2>Universitas Gadjah Mada</h2>
         <h3>Bachelor Degree of Statistic · GPA 3.59 · Aug 2011 - May 2015</h3>
       </div>
     </div>
@@ -136,7 +134,7 @@
           <div class="testimoni-content">
             <img src="https://media.licdn.com/dms/image/D5603AQGAdM_0F59-fA/profile-displayphoto-shrink_100_100/0/1673884226154?e=1718841600&v=beta&t=9LCjKk56r4D0p-ctyx704-55_jSTBNrk1ktLlfumS3s">
             <h2>Raunak Tauladar</h2>
-            <h3>Director | IT Leader | Startup Advisor | Technical & Process Consultant | Certified Project Manager | Certified Product Owner | Upwork Freelancer</h3>
+            <h3>Director | IT Leader | Startup Advisor | Certified Project Manager | Certified Product Owner | Upwork Freelancer</h3>
             <div class="testimoni-content-text">
               <p>I had the pleasure of working closely with Rio, and his talent in the Data, SEO, and Digital Marketing fields is truly exceptional. His calm and patient approach makes him a standout professional, and it's a rarity to find someone with such a combination of skills and a helpful attitude.
 
@@ -225,63 +223,7 @@
           once: false
       });
   </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const testimoniContainer = document.querySelector('.testimoni-container');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-
-        let currentIndex = 0;
-        let isAnimating = false;
-
-        prevBtn.addEventListener('click', function() {
-            if (currentIndex > 0 && !isAnimating) {
-                currentIndex--;
-                scrollToTestimonial(currentIndex);
-            }
-        });
-
-        nextBtn.addEventListener('click', function() {
-            if (currentIndex < testimoniContainer.children.length - 1 && !isAnimating) {
-                currentIndex++;
-                scrollToTestimonial(currentIndex);
-            }
-        });
-
-        testimoniContainer.addEventListener('scroll', function() {
-            currentIndex = Math.round(testimoniContainer.scrollLeft / testimoniContainer.offsetWidth);
-            updateNavigationButtons(currentIndex);
-        });
-
-        function scrollToTestimonial(index) {
-            const testimonial = testimoniContainer.children[index];
-            isAnimating = true;
-            testimoniContainer.scrollLeft = testimonial.offsetLeft - testimoniContainer.offsetLeft;
-            setTimeout(() => {
-                isAnimating = false;
-            }, 500); // Adjust the delay as needed
-            updateNavigationButtons(index);
-        }
-
-        function updateNavigationButtons(index) {
-            if (index === 0) {
-                prevBtn.disabled = true;
-            } else {
-                prevBtn.disabled = false;
-            }
-
-            if (index === testimoniContainer.children.length - 1) {
-                nextBtn.disabled = true;
-            } else {
-                nextBtn.disabled = false;
-            }
-        }
-
-        // Initialize navigation buttons state
-        updateNavigationButtons(currentIndex);
-    });
-  </script>
-
+  <script src="navigation.js"></script>
+  
 </body>
 </html>
