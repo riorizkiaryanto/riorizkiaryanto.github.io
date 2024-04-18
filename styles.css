@@ -366,6 +366,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 22%;
 }
 
 #educations h3 {
@@ -418,6 +419,7 @@ nav a {
   text-align: center;
   height: 100vh;
   max-width: 800px;
+  margin-left: 22%;
 }
 
 .testimoni-container {
@@ -426,6 +428,11 @@ nav a {
   scroll-snap-type: x mandatory;
   position: relative;
   max-width: 800px;
+}
+
+.testimoni-container a {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .recommendations {
@@ -492,16 +499,20 @@ nav a {
 
 .testimoni-content-text h2 {
   font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .testimoni-content-text h3 {
   text-align: left;
   font-size: 14px;
   flex: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .testimoni-content-text p {
-  text-align: left;
+  text-align: justify;
   font-size: 14px;
   margin: 0 auto;
 }
@@ -530,6 +541,24 @@ nav a {
 .next {
   position: absolute;
   right: 10px;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: 1px solid #072684;
+  cursor: pointer;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 16px; 
+  border-radius: 5px;
+}
+
+#scrollToTopBtn i {
+  font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {
@@ -603,9 +632,29 @@ nav a {
     text-align: center;
   }
 
+  #testimonials {
+    width: 100%;
+    /* margin-bottom: 20px; */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .testimoni-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .testimoni {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .testimoni-content {
+    width: 100%;
+    /* margin-bottom: 20px; */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
 }
 
-/* Styles for screens larger than 768px */
-@media screen and (min-width: 768px) {
-  /* Tidak ada perubahan pada aturan CSS untuk lebar layar di atas 768px */
-}

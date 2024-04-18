@@ -54,3 +54,23 @@ document.addEventListener("DOMContentLoaded", function() {
     updateNavigationButtons(currentIndex);
 });
 //   </script>
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  
+  // Show or hide the scroll-to-top button based on the scroll position
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
