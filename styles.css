@@ -565,6 +565,20 @@ nav a {
 
 .detail {
   font-size: 14px;
+  display: inline-block;
+  padding: 4px 16px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.detail:hover {
+  background-color: darkblue;
+  color: #ffffff;
 }
 
 #case-study {
