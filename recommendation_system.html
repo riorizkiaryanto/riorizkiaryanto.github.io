@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/assets/favicon/site.webmanifest">
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./projects.html">Back to All Projects</a>
+    </nav>
+
+    <div id="case-study">
+        <h1>A Robust Recommendation System for Undergraduate Program Selection</h1>
+
+        <div class="overview">
+            <h2>Project Overview</h2>
+            <hr>
+            <p>This project represents the culmination of my master's degree studies. I developed a <span class="highlight">recommendation system</span> employing a machine learning approach 
+                <span class="highlight">aimed at assisting high school students in selecting the most suitable undergraduate program based on their academic skills</span>. The core of 
+                the model relies on a <span class="highlight">multi-stages classification model utilizing the Random Forest</span> algorithm. Additionally, I created a 
+                <span class="highlight">user-friendly dashboard using the Dash</span> library to provide users with an intuitive interface for interacting with the recommendation system.</p>
+        </div>
+        <div class="challenges">
+            <h2>Challenges</h2>
+            <hr>
+            <p>One of the project's most challenging aspects revolved around managing the data. In my case, the available data exhibited <span class="highlight">imbalance</span>, 
+                significantly impacting the performance of the data model. To address the issue, I choose to implement <spann class="highlight">SMOTE (Synthetic Minority Oversampling Method)</spann> 
+                to rebalance the dataset and enhance model accuracy.</p>
+        </div>
+        <div class="process">
+            <h2>Process</h2>
+            <hr>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>1. Data Preparation</h2>
+                    <p>This stage encompasses the data collection process, standardization, addressing imbalance issues, and data selection.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>2. Development & Model Comparison</h2>
+                    <p>The model was developed using Python, with careful consideration given to various aspects throughout the development process. A comparison was made between 
+                        single-stage and multi-stages models to assess performance differences. Additionally, three commong classification algorithms - Logictic Regression, 
+                        SVM (Support Vector Machine) and Random Forest - were tested to determine the most suitable approach.
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>3. Presentation</h2>
+                    <p>In addition to the academic paper, I developed a dashboard to showcase the functionality of the recommendationn system. This dashboard was created using the 
+                        Python library Dash.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="results">
+            <h2>Result</h2>
+            <hr>
+            <p>The successful completion of this project contributed significantly to my graduation from the master's degree program with outstanding results. Furthermore, the research 
+                finding were <span class="highlight">published in an academic journals</span>: </p>
+                <p>· RESTI (Rekayasa Sistem dan Informasi Technologi) - accessible through this <a href="https://jurnal.iaii.or.id/index.php/RESTI/article/view/3392" target="_blank">link</a></p>
+                <p>· JTIIK (Jurnal Teknologi Informasi dan Ilmu Komputer) - accessible through this <a href="https://www.researchgate.net/publication/366688268_Model_Klasifikasi_Calon_Mahasiswa_Baru_Untuk_Sistem_Rekomendasi_Program_Studi_Sarjana_Berbasis_Machine_Learning" target="_blank">link</a></p>
+            <p>Additionally, press releases regarding the project were available and can be found via the following links: 
+                <a href="https://jurnal.republika.co.id/posts/168457/rio-rizki-aryanto-kembangkan-teknologi-memilih-program-studi-yang-tepat#google_vignette" target="_blank">Republika</a> and 
+                <a href="https://beritabernas.com/prodi-informatika-fti-uii-kembangkan-sistem-rekomendasi-program-studi-bagi-siswa-sma/" target="_blank">Bernas</a>.
+            </p>
+        </div>
+        <div class="data-stack">
+            <h2>Data Stack</h2>
+            <hr>
+            <p>The project utilized a data stack consisting of Python, sklearn, and Dash</p>
+        </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="navigation.js"></script>
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+</body>

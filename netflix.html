@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/assets/favicon/site.webmanifest">
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./projects.html">Back to All Projects</a>
+    </nav>
+
+    <div id="case-study">
+        <h1>Netflix Navigator: Illuminating the IMDb Realm</h1>
+
+        <div class="overview">
+            <h2>Project Overview</h2>
+            <hr>
+            <p>In this personal project, I embarked on <span class="highlight">analyzing Netflix and TV show data</span> sourced from IMDb via Kaggle <a href="https://www.kaggle.com/datasets/thedevastator/netflix-top-rated-movies-and-tv-shows-2020-2022" target="_blank">here</a>. Leveraging a <span class="highlight">Gaussian Mixture clustering model</span>, I segmented the dataset into Top (Recommended) and Non-Top rated categories. The objective was to delve into the data, extract insights, and subsequently visualize them using Looker Studio to create captivating infographics</p>
+        </div>
+        <div class="challenges">
+            <h2>Challenges</h2>
+            <hr>
+            <p>The primary challenge in this project lies in <span class="highlight">effectively compiling the outcomes of the clustering model</span> into an interactive and engaging Looker Studio dashboard.</p>
+        </div>
+        <div class="process">
+            <h2>Process</h2>
+            <hr>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>1. Brainstorming</h2>
+                    <p>This stage involves understanding the client’s expectations and connecting them with the available data points.</p>
+                    <br>
+                    <p><strong>Key activities:</strong></p>
+                    <p>1. Identify client needs and expectations</p>
+                    <p>2. Analyze current data sources and their relevance to client goals</p>
+                    <p>3. Establish clear objectives for the dashboard</p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>2. Development</h2>
+                    <p>In this stage, DAX queries are developed and related calculations are implemented in Power BI.</p>
+                    <br>
+                    <p><strong>Key activities:</strong></p>
+                    <p>1. Build DAX queries to extract, filter, and transform data</p>
+                    <p>2. Implement calculations for metrics and KPIs</p>
+                    <p>3. Ensuring data accuracy and consistency</p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>3. Visualization</h2>
+                    <p>The focus is on visually presenting the data to make insights easily accessible to users</p>
+                    <br>
+                    <p><strong>Key activities:</strong></p>
+                    <p>1. Design intuitive and user-friendly elements for exploration</p>
+                    <p>2. Create interactive elements for explorations</p>
+                    <p>3. Incorporate storytelling techniques to convey insights effectively</p>
+                </div>
+            </div>
+        </div>
+        <div class="results">
+            <h2>Result</h2>
+            <hr>
+            <p>I've exceeded expectations by <span class="highlight">delivering more than the agreed-upon targets</span> and assisting the client in developing multiple distinct dashboards. Feedback from the client thus far <span class="highlight">indicates their satisfaction with the results</span>, as the dashboards have proven instrumental in gathering valuable business insights.</p>
+            
+        </div>
+        <div class="data-stack">
+            <h2>Data Stack</h2>
+            <hr>
+            <p>The project utilized a data stack consisting of Power BI, Microsoft Excel</p>
+        </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="navigation.js"></script>
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+</body>
