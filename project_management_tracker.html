@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/assets/favicon/site.webmanifest">
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./projects.html">Back to Projects</a>
+    </nav>
+
+    <div id="case-study">
+        <h1>Project Management Tracker</h1>
+
+        <div class="overview">
+            <h2>Project Overview</h2>
+            <hr>
+            <p>Our management team requires <span class="highlight">a tool to effectively monitor project progress</span>, focusing on budget and spending allocation, as well as mandays utilization. 
+                Presently, this information lacks transparency and is known only to a select few, potentially causing bottlenecks. Therefore, we have determined the necessity 
+                for a tool that provides a concise overview of all ongoing projects, enabling quick access to essential details.
+            </p>
+        </div>
+        <div class="challenges">
+            <h2>Challenges</h2>
+            <hr>
+            <p>Data originates from diverse sources, each with its unique format, and ofter within the same category, multiple formats may exists. As a preliminary step, it's essential 
+                to <span class="highlight">standardize the structure of each data source and anticipate future utilization requirements</span>. Flexibility in format is paramount to accommodate varying data sources efficiently.
+            </p>
+        </div>
+        <div class="process">
+            <h2>Process</h2>
+            <hr>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>1. Scoping & Designing</h2>
+                    <p>The initial stage primarily involves engaging with other departments, understanding their accomplishments, and addressing their current challenges. 
+                        It's imperative to accurately capture the needs of each department comprehensively. Additionally, I began exploring Asana, our project task tracker. My intention 
+                        is to leverage Asana's data by utilizing its API to streamline and automate various processes. 
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>2. Development</h2>
+                    <p>The developeed process entailed coding in Python, defining the workflow and its automation strategy, creating templates for data storages, and 
+                        various other tasks.
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>3. Presentation</h2>
+                    <p>Presenting the system to other departments and capturing their feedback is crucial for future enhancements and improvements.</p>
+                </div>
+            </div>
+        </div>
+        <div class="results">
+            <h2>Result</h2>
+            <hr>
+            <p>The system is currently in use by various teams and <span class="highlight">serves as a reference for developing internal software</span> to address areas not adequately covered by the existing system.</p>
+            
+        </div>
+        <div class="data-stack">
+            <h2>Data Stack</h2>
+            <hr>
+            <p>The project utilized a data stack consisting of Python, Asana, MySQL, and Google Sheet</p>
+        </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="navigation.js"></script>
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+</body>

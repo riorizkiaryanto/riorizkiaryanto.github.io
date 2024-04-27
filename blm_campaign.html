@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/assets/favicon/site.webmanifest">
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./projects.html">Back to Projects</a>
+    </nav>
+
+    <div id="case-study">
+        <h1>Insights into Public Perception: Black Lives Matter Campaign Analysis</h1>
+
+        <div class="overview">
+            <h2>Project Overview</h2>
+            <hr>
+            <p>
+                One of the topics I learnied during my master's degree program was the use of the Spark platform for efficient data processing. One of the assignments given at that time was to 
+                implement Spark in real-world situations.
+            </p>
+            <p>
+                At that time, the Black Live Matter campaign was happening worldwide. It caught my attention, so I chose to address this topic by <span class="highlight">utilizing Spark to gather data from Twitter</span> 
+                social media as the main data sourc.
+            </p>
+        </div>
+        <div class="challenges">
+            <h2>Challenges</h2>
+            <hr>
+            <p>
+                Not only did I use Spark, but I also chose to utilize SparkNLP, a library specifically designed for processing data related to NLP. Initially, using both felt challenging because 
+                I didn't have prior experience. It took some time to learn both before I could efficiently implement them into code. And I needed to complete this step quickly before 
+                losing the momentum related to the Black Live Matters campaign on social media.
+            </p>
+        </div>
+        <div class="process">
+            <h2>Process</h2>
+            <hr>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>1. Exploration</h2>
+                    <p>Read and learn Spark documentation.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>2. Development</h2>
+                    <p>Write the code in Python. Basically the code will process below:</p>
+                    <p>1. Collect the data from Twitter</p>
+                    <p>2. For every new data entry, the system will run a sentiment analysis using Stanford NLP model</p>
+                    <p>3. Store the Twitter and sentiment result into database</p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>3. Analysis</h2>
+                    <p>Analyze the collected data and the sentiment results.</p>
+                </div>
+            </div>
+        </div>
+        <div class="results">
+            <h2>Result</h2>
+            <hr>
+            <p>
+                The final outcoume of this project was the <span class="highlight">of the research in the international conference</span> titled IOP Conference Series: Materials Science and Engineering. 
+                Additionally, I had the opportunity to present as a speaker at the conferece, sharing my experience in using Spark and SparkNLP to analyze data from the Black Live Matter 
+                campaign. Find the publication <a href="https://iopscience.iop.org/article/10.1088/1757-899X/1077/1/012005" target="_blank">here.</a>
+            </p>
+
+        </div>
+        <div class="data-stack">
+            <h2>Data Stack</h2>
+            <hr>
+            <p>The project utilized a data stack consisting of Python, Spark, SparkNLP, Twitter, and MySQL</p>
+        </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="navigation.js"></script>
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+</body>
